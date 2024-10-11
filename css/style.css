@@ -75,7 +75,15 @@ section {
   background-color: #ffffff;
   margin-bottom: 25px;
 }
-
+section div img {
+  display: inline-block;
+  width: 15%;
+  /* width: 280px;
+  height: 300px; */
+  vertical-align: top;
+  border-radius: 15px;
+  box-shadow: 1px 0px 2px 0px #595e649e;
+}
 section img {
   width: 10%;
 }
@@ -115,4 +123,11 @@ footer a {
 .footerissimo img {
   width: 10%;
   padding-top: 50px;
+}
+
+span a {
+  text-decoration: none;
+  color: #257081;
+  font-size: 0.7rem;
+  font-weight: 700;
 }
