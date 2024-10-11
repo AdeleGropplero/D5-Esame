@@ -2,75 +2,117 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header div{
-    background-color: #222F3F;
-    text-align: left;
-    line-height: 30px;
-    padding-left: 20px;
-
+header div {
+  background-color: #222f3f;
+  text-align: left;
+  line-height: 30px;
+  padding-left: 20px;
 }
 header a img {
-    width: 5%;
-    
-    padding-top: 20px;
-    
+  width: 5%;
+
+  padding-top: 20px;
 }
 nav {
-    background-color: #354758;
-    padding-left: 20px;
-    
+  background-color: #354758;
+  padding-left: 20px;
 }
 
-
-nav ul li{
-  display: inline-block;  
+nav ul li {
+  display: inline-block;
   padding-right: 14px;
-  
-}  
+}
 nav ul li a {
-    text-decoration: none;
-    color:#E9EBEF;
-    font-size: .7rem;
-    line-height: 25px;
+  text-decoration: none;
+  color: #e9ebef;
+  font-size: 0.7rem;
+  line-height: 25px;
 }
 
 main {
-    padding: 25px;
-    background-color: #E9EDEE;
+  padding-inline: 25px;
+  padding-top: 25px;
+  background-color: #e9edee;
 }
 
 .orange {
-    background-color: #F46600;
-    color: #E9EBEF;
-    line-height: 25px;
-    text-align: center;
-    font-size: .7rem;
-    margin-bottom: 25px;
+  background-color: #f46600;
+  color: #e9ebef;
+  line-height: 25px;
+  text-align: center;
+  font-size: 0.7rem;
+  margin-bottom: 25px;
 }
 .title {
-    background-image: url(../images/bg-image.png);
-    background-size: 100%;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: #E9EBEF;
-    font-weight: 700;
-};
+  background-image: url(../images/bg-image.png);
+  background-size: 100%;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  color: #e9ebef;
+  font-weight: 700;
+}
 
-h1{
-    font-size: 1.2rem;
-    padding-bottom: 15px;
-    margin: 50px
-};
+main div h1 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
 
 p {
-    padding-top: 15px;
+  padding-top: 10px;
+  font-size: 1rem;
+}
 
+section {
+  margin-top: 25px;
+  background-color: #ffffff;
+  margin-bottom: 25px;
+}
+
+section img {
+  width: 10%;
+}
+
+aside {
+  text-align: center;
+}
+
+aside p {
+  padding-bottom: 25px;
+}
+
+aside img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+}
+
+footer .blu {
+  background-color: #354758;
+
+  line-height: 25px;
+}
+
+footer a {
+  color: #e9ebef;
+  font-size: 0.7rem;
+}
+
+.footerissimo {
+  background-color: #222f3f;
+  line-height: 120px;
+}
+
+.footerissimo img {
+  width: 10%;
+  padding-top: 50px;
 }
