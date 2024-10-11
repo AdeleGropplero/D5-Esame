@@ -149,6 +149,7 @@ tutti i risultati di if else così da avere in linea in console tutti i risultat
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105, 12,
 ];
+
 /*let i = 0;
 while (i < numericArray.length) {
   const num =
@@ -156,15 +157,26 @@ while (i < numericArray.length) {
       i
     ];  
    if (num < 32) {
-    console.log(num);
+    console.log("Es. 7");
   } 
 }niente, se eseguo questo if anche con else mi crascha tutto :(  */
+
+let i = 0;
+const array2 = [];
+while (numericArray[i] !== 32) {
+  array2.push(numericArray[[i]]);
+  i++;
+}
+console.log("Es. 9", array2);
+/* dopo diverse prove a mente un po' più lucida e con una dritta di Emanuele, 
+sono riuscita a risolvere l'esercizio. Anche se non richiesto ho preferito inserire
+ i risultati in un array */
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
-*/
+
 const charactersArray = ["g", "n", "u", "z", "d"];
 const number = [];
 
@@ -193,6 +205,121 @@ for (let i = 0; i < charactersArray.length; i++) {
   }
 }
 console.log("Es. 10", charactersArray);
-console.log(number);
+console.log(number);*/
 /* su internet ho visto che c'era la possibilità di risolverlo con Map ma non avendolo visto a lezione l'ho eseguito così.
-   ho però il sospetto che dovessi fare qualcosa di diverso. */
+   ho però il sospetto che dovessi fare qualcosa di diverso. 
+   Ho provato a compilarlo in manira più completa, in questo modo, qualsiasi lettera inseriamo nel nostro array avrà un riscontro.*/
+
+const charactersArray = ["g", "n", "u", "z", "d"];
+const number = [];
+
+for (let i = 0; i < charactersArray.length; i++) {
+  let char = charactersArray[i];
+  switch (char) {
+    case "a":
+      number.push(1);
+      break;
+
+    case "b":
+      number.push(2);
+      break;
+
+    case "c":
+      number.push(3);
+      break;
+
+    case "d":
+      number.push(4);
+      break;
+
+    case "e":
+      number.push(5);
+      break;
+
+    case "f":
+      number.push(6);
+      break;
+
+    case "g":
+      number.push(7);
+      break;
+
+    case "h":
+      number.push(8);
+      break;
+
+    case "i":
+      number.push(9);
+      break;
+
+    case "j":
+      number.push(10);
+      break;
+
+    case "k":
+      number.push(11);
+      break;
+
+    case "l":
+      number.push(12);
+      break;
+
+    case "m":
+      number.push(13);
+      break;
+
+    case "n":
+      number.push(14);
+      break;
+
+    case "o":
+      number.push(15);
+      break;
+
+    case "p":
+      number.push(16);
+      break;
+
+    case "q":
+      number.push(17);
+      break;
+
+    case "r":
+      number.push(18);
+      break;
+
+    case "s":
+      number.push(19);
+      break;
+
+    case "t":
+      number.push(20);
+      break;
+
+    case "u":
+      number.push(21);
+      break;
+
+    case "v":
+      number.push(22);
+      break;
+
+    case "w":
+      number.push(23);
+      break;
+
+    case "x":
+      number.push(24);
+      break;
+
+    case "y":
+      number.push(25);
+      break;
+
+    case "z":
+      number.push(26);
+      break;
+  }
+}
+console.log("Es. 10", charactersArray);
+console.log(number);
