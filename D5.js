@@ -210,12 +210,12 @@ console.log(number);*/
    ho però il sospetto che dovessi fare qualcosa di diverso. 
    Ho provato a compilarlo in manira più completa, in questo modo, qualsiasi lettera inseriamo nel nostro array avrà un riscontro.*/
 
-const charactersArray = ["g", "n", "u", "z", "d"];
+const charactersArray = ["g", "n", "u", "z", "d", "f", "A"];
 const number = [];
 
 for (let i = 0; i < charactersArray.length; i++) {
   let char = charactersArray[i];
-  switch (char) {
+  switch (char.toLowerCase()) {
     case "a":
       number.push(1);
       break;
